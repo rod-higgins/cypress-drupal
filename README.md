@@ -8,8 +8,8 @@
 
 ## Notes
 
-  * - [x] Setup Cypress in your project's root and we implemented Page Object Design Pattern as below:
-       + All test framework details under in web/themes/custom/cypress directory
+  * - [x] Setup Cypress in your <project root>/testing directory and we implemented Page Object Design Pattern as below:
+       + All test framework details under in <project root>/testing/cypress directory
        + Test files(cypress/integration): create_article_via_json_api.spec.spec.js; create_article_via_ui.spec;login.spec.js
        + Page specific files(cypress/page-objects): create_article.js, login.js
        + Test data(cypress/fixtures): article_testdata.js, login_testdata.js
