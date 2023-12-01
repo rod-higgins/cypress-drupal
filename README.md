@@ -1,9 +1,7 @@
 # E2E Testing with Cypress and Drupal
 
-![Data seeding through JSON:API approach](demo-evidence/dataseeding.gif)
-
 ## Setup
-1. For quick installation of drupal 8 site and lando, please refer this [axl-template repo](https://github.com/axelerant/axl-template) 
+1. For quick installation of drupal 10 site and lando, please use `lando start`
 2. Setup the project with standard install profile and also configure [JSON:API Module](https://www.drupal.org/project/jsonapi) module to handle all the basic operations('GET', 'POST', 'DELETE' etc) to be performed.
 
 ## Notes
