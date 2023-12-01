@@ -1,0 +1,16 @@
+{
+    "baseUrl": "http://site.lndo.site/",
+    "viewportHeight": 900,
+    "viewportWidth": 1440,
+    "waitForFileChanges": false,
+    "experimentalStudio":true,
+    "eyesTimeout": 180000,
+    "env": {
+      "cyAdminUser": "admin",
+      "cyAdminPassword": "admin",
+      "cyAdminRole": "administrator",
+      "cyEditorUser": "editor",
+      "cyEditorPassword": "editor",
+      "cyEditorRole": "editor"
+    }
+  }

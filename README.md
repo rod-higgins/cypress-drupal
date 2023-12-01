@@ -1,8 +1,10 @@
 # E2E Testing with Cypress and Drupal
 
 ## Setup
-1. For quick installation of drupal 10 site and lando, please use `lando start`
+1. For quick installation of a drupal 10 site and lando, please use `lando start`
 2. Setup the project with standard install profile and also configure [JSON:API Module](https://www.drupal.org/project/jsonapi) module to handle all the basic operations('GET', 'POST', 'DELETE' etc) to be performed.
+3. The example cypress scripts use a recipe, article content types. Once the `lando start` runs and provisions everything you need. Run the default D10 install via a browser (db connection through 'database' host with drupal10 / drupal10 / drupal10 for user, database, password) then import the db from the data/data.sql.gz file using `lando db-import data/data.sql.gz` to overwrite the default install. This DB has the prevconfigured CT's taxonomies for the testing scripts.
+4. Please be mindful you may need to alias the OS browser you are using for chromium etc. See below for the linux option.
 
 ## Notes
 
@@ -26,7 +28,7 @@
 
 ## NPM Scripts for test execution
 
-Clone/import this project in your drupal project and change the "baseUrl" field in cypress.json file as per your site. Next, run below commands from the project root:
+Clone/import this project in your drupal project and change the "baseUrl" field in cypress.json file as per your site. Next, run below commands from the testing directory under the project root:
    + **npm i** - install dependencies
    + **npm run test:headless** - spin up the test execution in headless mode in chrome browser
    + **npm run test:head** - spin up the test execution in head mode in chrome browser
