@@ -3,7 +3,7 @@
 ## Setup
 1. For quick installation of a drupal 10 site and lando, please use `lando start`
 2. Setup the project with standard install profile and also configure [JSON:API Module](https://www.drupal.org/project/jsonapi) module to handle all the basic operations('GET', 'POST', 'DELETE' etc) to be performed.
-3. The example cypress scripts use a recipe, article content types. Once the `lando start` runs and provisions everything you need. Run the default D10 install via a browser (db connection through 'database' host with drupal10 / drupal10 / drupal10 for user, database, password) then import the db from the data/data.sql.gz file using `lando db-import data/data.sql.gz` to overwrite the default install. This DB has the preconfigured CT's taxonomies for the testing scripts.
+3. The example cypress scripts use a recipe, article content types. Once the `lando start` runs and provisions everything you need. Run the default D10 install via a browser (db connection through 'database' host with 'drupal10' for user, database, password) then import the db from the data/data.sql.gz file using `lando db-import data/data.sql.gz` to overwrite the default install. This DB has the preconfigured CT's taxonomies for the testing scripts.
 4. Please be mindful you may need to alias the OS browser you are using for chromium etc. See below for the linux option.
 
 ## Notes
