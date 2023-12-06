@@ -26,6 +26,9 @@ tooling:
   phpunit:
     service: appserver
     cmd: /app/vendor/bin/phpunit
+  phpcs:
+    service: appserver
+    cmd: /app/vendor/bin/phpcs  
   redis-cli:
     service: cache
 
